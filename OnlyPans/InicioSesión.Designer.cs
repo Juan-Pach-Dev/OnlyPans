@@ -34,7 +34,7 @@ namespace OnlyPans
             this.LblUsuario = new System.Windows.Forms.Label();
             this.LblContraseña = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.Txtbiniciarsesion = new System.Windows.Forms.TextBox();
+            this.Btniniciarsesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbltitulo
@@ -78,21 +78,21 @@ namespace OnlyPans
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
             // 
-            // Txtbiniciarsesion
+            // Btniniciarsesion
             // 
-            this.Txtbiniciarsesion.Location = new System.Drawing.Point(254, 220);
-            this.Txtbiniciarsesion.Name = "Txtbiniciarsesion";
-            this.Txtbiniciarsesion.Size = new System.Drawing.Size(156, 20);
-            this.Txtbiniciarsesion.TabIndex = 5;
-            this.Txtbiniciarsesion.Text = "Iniciar Sesión";
-            this.Txtbiniciarsesion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Btniniciarsesion.Location = new System.Drawing.Point(254, 221);
+            this.Btniniciarsesion.Name = "Btniniciarsesion";
+            this.Btniniciarsesion.Size = new System.Drawing.Size(120, 23);
+            this.Btniniciarsesion.TabIndex = 5;
+            this.Btniniciarsesion.Text = "Iniciar Sesión";
+            this.Btniniciarsesion.UseVisualStyleBackColor = true;
             // 
             // InicioSesión
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Txtbiniciarsesion);
+            this.Controls.Add(this.Btniniciarsesion);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.LblContraseña);
             this.Controls.Add(this.LblUsuario);
@@ -112,6 +112,6 @@ namespace OnlyPans
         private System.Windows.Forms.Label LblUsuario;
         private System.Windows.Forms.Label LblContraseña;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox Txtbiniciarsesion;
+        private System.Windows.Forms.Button Btniniciarsesion;
     }
 }
