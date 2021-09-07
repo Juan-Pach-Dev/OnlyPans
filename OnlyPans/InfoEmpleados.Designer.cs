@@ -29,6 +29,7 @@ namespace OnlyPans
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoEmpleados));
             this.Lblregistroventa = new System.Windows.Forms.Label();
             this.Lbldatoscliente = new System.Windows.Forms.Label();
             this.Lblnombre = new System.Windows.Forms.Label();
@@ -279,7 +280,7 @@ namespace OnlyPans
             // Lblventashechas
             // 
             this.Lblventashechas.AutoSize = true;
-            this.Lblventashechas.Location = new System.Drawing.Point(378, 35);
+            this.Lblventashechas.Location = new System.Drawing.Point(470, 35);
             this.Lblventashechas.Name = "Lblventashechas";
             this.Lblventashechas.Size = new System.Drawing.Size(83, 13);
             this.Lblventashechas.TabIndex = 26;
@@ -297,6 +298,7 @@ namespace OnlyPans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 584);
             this.Controls.Add(this.Rtbventashechas);
             this.Controls.Add(this.Lblventashechas);
