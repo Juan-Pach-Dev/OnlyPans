@@ -31,9 +31,15 @@ namespace OnlyPans
             Rtbventashechas.Text = "REGISTRO DE VENTA \n" + "Datos del cliente \n" + "Nombre: " + Txtbnombre.Text + "\n"
             + "Cédula: " + Txtbcédula.Text + "\n" + "Datos de la venta \n" + "Tipo de pan \n" + "Aliñado: " + Txtporciónaliñado.Text 
             + "\n" + "No aliñado: " + Txtporciónoaliñado.Text + "\n" + "Especial: " + Txtporciónespecial.Text + "\n" + "Precio total de la venta: " + Txtbprecioventa.Text + "\n"
-            + "Hora de la venta: " + Txtbhoraventa.Text + "\n" + "======================================================================================\n" + Txtguardado.Text;
+            + "Hora de la venta: " + Txtbhoraventa.Text + "\n" + "==========================================================================================\n" + Txtguardado.Text;
             Clipboard.SetText(Rtbventashechas.Text);
             Txtguardado.Text = Clipboard.GetText();
+            Txtbnombre.Clear();
+            Txtbcédula.Clear();
+            Txtbpreciopanaliñeado.Clear();
+            Txtbpreciopannoaliñado.Clear();
+            Txtbpreciopanespecial.Clear();
+            Txtbhoraventa.Clear();
         }
 
         private void Btncerrarusuario_Click(object sender, EventArgs e)

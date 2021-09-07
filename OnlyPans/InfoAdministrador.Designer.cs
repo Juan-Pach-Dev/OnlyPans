@@ -33,6 +33,8 @@ namespace OnlyPans
             this.Rtbalmacenamientodeventas = new System.Windows.Forms.RichTextBox();
             this.Btnproducirregistroventa = new System.Windows.Forms.Button();
             this.Lblalmacenamientoventas = new System.Windows.Forms.Label();
+            this.Btncerrarusuario = new System.Windows.Forms.Button();
+            this.Btnsalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Rtbalmacenamientodeventas
@@ -67,12 +69,38 @@ namespace OnlyPans
             this.Lblalmacenamientoventas.TabIndex = 2;
             this.Lblalmacenamientoventas.Text = "Almacenamiento de las ventas totales";
             // 
+            // Btncerrarusuario
+            // 
+            this.Btncerrarusuario.BackColor = System.Drawing.SystemColors.Window;
+            this.Btncerrarusuario.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Btncerrarusuario.Location = new System.Drawing.Point(478, 335);
+            this.Btncerrarusuario.Name = "Btncerrarusuario";
+            this.Btncerrarusuario.Size = new System.Drawing.Size(86, 42);
+            this.Btncerrarusuario.TabIndex = 31;
+            this.Btncerrarusuario.Text = "Cerrar Usuario";
+            this.Btncerrarusuario.UseVisualStyleBackColor = false;
+            this.Btncerrarusuario.Click += new System.EventHandler(this.Btncerrarusuario_Click);
+            // 
+            // Btnsalir
+            // 
+            this.Btnsalir.BackColor = System.Drawing.SystemColors.Window;
+            this.Btnsalir.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Btnsalir.Location = new System.Drawing.Point(478, 400);
+            this.Btnsalir.Name = "Btnsalir";
+            this.Btnsalir.Size = new System.Drawing.Size(86, 38);
+            this.Btnsalir.TabIndex = 32;
+            this.Btnsalir.Text = "Salir";
+            this.Btnsalir.UseVisualStyleBackColor = false;
+            this.Btnsalir.Click += new System.EventHandler(this.Btnsalir_Click);
+            // 
             // InfoAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Btnsalir);
+            this.Controls.Add(this.Btncerrarusuario);
             this.Controls.Add(this.Lblalmacenamientoventas);
             this.Controls.Add(this.Btnproducirregistroventa);
             this.Controls.Add(this.Rtbalmacenamientodeventas);
@@ -85,9 +113,10 @@ namespace OnlyPans
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox Rtbalmacenamientodeventas;
         private System.Windows.Forms.Button Btnproducirregistroventa;
         private System.Windows.Forms.Label Lblalmacenamientoventas;
+        public System.Windows.Forms.RichTextBox Rtbalmacenamientodeventas;
+        private System.Windows.Forms.Button Btncerrarusuario;
+        private System.Windows.Forms.Button Btnsalir;
     }
 }

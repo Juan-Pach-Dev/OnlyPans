@@ -16,5 +16,15 @@ namespace OnlyPans
         {
             InitializeComponent();
         }
+
+        private void Btncerrarusuario_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btnsalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -53,7 +53,7 @@ namespace OnlyPans
             this.Txtbprecioventa = new System.Windows.Forms.TextBox();
             this.Lblpreciototal = new System.Windows.Forms.Label();
             this.Txtbpreciopanaliñeado = new System.Windows.Forms.TextBox();
-            this.Txtbprecionoaliñado = new System.Windows.Forms.TextBox();
+            this.Txtbpreciopannoaliñado = new System.Windows.Forms.TextBox();
             this.Txtbpreciopanespecial = new System.Windows.Forms.TextBox();
             this.Lblventashechas = new System.Windows.Forms.Label();
             this.Rtbventashechas = new System.Windows.Forms.RichTextBox();
@@ -297,14 +297,14 @@ namespace OnlyPans
             this.Txtbpreciopanaliñeado.Text = "1000";
             this.Txtbpreciopanaliñeado.Visible = false;
             // 
-            // Txtbprecionoaliñado
+            // Txtbpreciopannoaliñado
             // 
-            this.Txtbprecionoaliñado.Location = new System.Drawing.Point(228, 271);
-            this.Txtbprecionoaliñado.Name = "Txtbprecionoaliñado";
-            this.Txtbprecionoaliñado.Size = new System.Drawing.Size(35, 20);
-            this.Txtbprecionoaliñado.TabIndex = 24;
-            this.Txtbprecionoaliñado.Text = "500";
-            this.Txtbprecionoaliñado.Visible = false;
+            this.Txtbpreciopannoaliñado.Location = new System.Drawing.Point(228, 271);
+            this.Txtbpreciopannoaliñado.Name = "Txtbpreciopannoaliñado";
+            this.Txtbpreciopannoaliñado.Size = new System.Drawing.Size(35, 20);
+            this.Txtbpreciopannoaliñado.TabIndex = 24;
+            this.Txtbpreciopannoaliñado.Text = "500";
+            this.Txtbpreciopannoaliñado.Visible = false;
             // 
             // Txtbpreciopanespecial
             // 
@@ -379,7 +379,7 @@ namespace OnlyPans
             this.Controls.Add(this.Rtbventashechas);
             this.Controls.Add(this.Lblventashechas);
             this.Controls.Add(this.Txtbpreciopanespecial);
-            this.Controls.Add(this.Txtbprecionoaliñado);
+            this.Controls.Add(this.Txtbpreciopannoaliñado);
             this.Controls.Add(this.Txtbpreciopanaliñeado);
             this.Controls.Add(this.Lblpreciototal);
             this.Controls.Add(this.Txtbprecioventa);
@@ -435,12 +435,12 @@ namespace OnlyPans
         private System.Windows.Forms.TextBox Txtbprecioventa;
         private System.Windows.Forms.Label Lblpreciototal;
         private System.Windows.Forms.TextBox Txtbpreciopanaliñeado;
-        private System.Windows.Forms.TextBox Txtbprecionoaliñado;
+        private System.Windows.Forms.TextBox Txtbpreciopannoaliñado;
         private System.Windows.Forms.TextBox Txtbpreciopanespecial;
         private System.Windows.Forms.Label Lblventashechas;
-        private System.Windows.Forms.RichTextBox Rtbventashechas;
         private System.Windows.Forms.TextBox Txtguardado;
         private System.Windows.Forms.Button Btnsalir;
         private System.Windows.Forms.Button Btncerrarusuario;
+        public System.Windows.Forms.RichTextBox Rtbventashechas;
     }
 }
