@@ -31,7 +31,6 @@ namespace OnlyPans
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoAdministrador));
             this.Rtbalmacenamientodeventas = new System.Windows.Forms.RichTextBox();
-            this.Btnproducirregistroventa = new System.Windows.Forms.Button();
             this.Lblalmacenamientoventas = new System.Windows.Forms.Label();
             this.Btncerrarusuario = new System.Windows.Forms.Button();
             this.Btnsalir = new System.Windows.Forms.Button();
@@ -41,21 +40,10 @@ namespace OnlyPans
             // 
             this.Rtbalmacenamientodeventas.Location = new System.Drawing.Point(80, 56);
             this.Rtbalmacenamientodeventas.Name = "Rtbalmacenamientodeventas";
-            this.Rtbalmacenamientodeventas.Size = new System.Drawing.Size(315, 382);
+            this.Rtbalmacenamientodeventas.Size = new System.Drawing.Size(315, 136);
             this.Rtbalmacenamientodeventas.TabIndex = 0;
-            this.Rtbalmacenamientodeventas.Text = "";
-            // 
-            // Btnproducirregistroventa
-            // 
-            this.Btnproducirregistroventa.BackColor = System.Drawing.SystemColors.Window;
-            this.Btnproducirregistroventa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnproducirregistroventa.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Btnproducirregistroventa.Location = new System.Drawing.Point(478, 196);
-            this.Btnproducirregistroventa.Name = "Btnproducirregistroventa";
-            this.Btnproducirregistroventa.Size = new System.Drawing.Size(104, 72);
-            this.Btnproducirregistroventa.TabIndex = 1;
-            this.Btnproducirregistroventa.Text = "Producir Registro de Venta";
-            this.Btnproducirregistroventa.UseVisualStyleBackColor = false;
+            this.Rtbalmacenamientodeventas.Text = "Buen día administrador\n\nLe agradecemos los empleados de la panadería OnlyPans, po" +
+    "r\nel software proporcionado\n\nGracias por facilitar el trabajo de sus empleados";
             // 
             // Lblalmacenamientoventas
             // 
@@ -63,17 +51,17 @@ namespace OnlyPans
             this.Lblalmacenamientoventas.BackColor = System.Drawing.SystemColors.Window;
             this.Lblalmacenamientoventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lblalmacenamientoventas.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Lblalmacenamientoventas.Location = new System.Drawing.Point(82, 24);
+            this.Lblalmacenamientoventas.Location = new System.Drawing.Point(113, 23);
             this.Lblalmacenamientoventas.Name = "Lblalmacenamientoventas";
-            this.Lblalmacenamientoventas.Size = new System.Drawing.Size(313, 20);
+            this.Lblalmacenamientoventas.Size = new System.Drawing.Size(252, 20);
             this.Lblalmacenamientoventas.TabIndex = 2;
-            this.Lblalmacenamientoventas.Text = "Almacenamiento de las ventas totales";
+            this.Lblalmacenamientoventas.Text = "Mensaje para el Administrador";
             // 
             // Btncerrarusuario
             // 
             this.Btncerrarusuario.BackColor = System.Drawing.SystemColors.Window;
             this.Btncerrarusuario.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Btncerrarusuario.Location = new System.Drawing.Point(478, 335);
+            this.Btncerrarusuario.Location = new System.Drawing.Point(478, 44);
             this.Btncerrarusuario.Name = "Btncerrarusuario";
             this.Btncerrarusuario.Size = new System.Drawing.Size(86, 42);
             this.Btncerrarusuario.TabIndex = 31;
@@ -85,7 +73,7 @@ namespace OnlyPans
             // 
             this.Btnsalir.BackColor = System.Drawing.SystemColors.Window;
             this.Btnsalir.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Btnsalir.Location = new System.Drawing.Point(478, 400);
+            this.Btnsalir.Location = new System.Drawing.Point(478, 154);
             this.Btnsalir.Name = "Btnsalir";
             this.Btnsalir.Size = new System.Drawing.Size(86, 38);
             this.Btnsalir.TabIndex = 32;
@@ -102,7 +90,6 @@ namespace OnlyPans
             this.Controls.Add(this.Btnsalir);
             this.Controls.Add(this.Btncerrarusuario);
             this.Controls.Add(this.Lblalmacenamientoventas);
-            this.Controls.Add(this.Btnproducirregistroventa);
             this.Controls.Add(this.Rtbalmacenamientodeventas);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "InfoAdministrador";
@@ -113,7 +100,6 @@ namespace OnlyPans
         }
 
         #endregion
-        private System.Windows.Forms.Button Btnproducirregistroventa;
         private System.Windows.Forms.Label Lblalmacenamientoventas;
         public System.Windows.Forms.RichTextBox Rtbalmacenamientodeventas;
         private System.Windows.Forms.Button Btncerrarusuario;

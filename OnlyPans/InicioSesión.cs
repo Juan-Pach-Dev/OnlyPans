@@ -33,7 +33,7 @@ namespace OnlyPans
                 Txtcontraseña.Clear();
                 InfoAdministrador Main = new InfoAdministrador();
                 Main.ShowDialog();
-
+                
             }
             else
             {
