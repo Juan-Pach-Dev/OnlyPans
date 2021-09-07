@@ -43,53 +43,64 @@ namespace OnlyPans
             this.Lblporciónaliñado = new System.Windows.Forms.Label();
             this.Lblporciónnoaliñado = new System.Windows.Forms.Label();
             this.Lblporciónespecial = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Txtporciónaliñado = new System.Windows.Forms.TextBox();
+            this.Txtporciónoaliñado = new System.Windows.Forms.TextBox();
+            this.Txtporciónespecial = new System.Windows.Forms.TextBox();
             this.Lbltipopan = new System.Windows.Forms.Label();
             this.Lblhora = new System.Windows.Forms.Label();
             this.Txtbhoraventa = new System.Windows.Forms.TextBox();
             this.Btnvender = new System.Windows.Forms.Button();
             this.Txtbprecioventa = new System.Windows.Forms.TextBox();
             this.Lblpreciototal = new System.Windows.Forms.Label();
-            this.Lblpreciopan = new System.Windows.Forms.Label();
             this.Txtbpreciopanaliñeado = new System.Windows.Forms.TextBox();
             this.Txtbprecionoaliñado = new System.Windows.Forms.TextBox();
             this.Txtbpreciopanespecial = new System.Windows.Forms.TextBox();
             this.Lblventashechas = new System.Windows.Forms.Label();
             this.Rtbventashechas = new System.Windows.Forms.RichTextBox();
+            this.Txtguardado = new System.Windows.Forms.TextBox();
+            this.Btnsalir = new System.Windows.Forms.Button();
+            this.Btncerrarusuario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lblregistroventa
             // 
             this.Lblregistroventa.AutoSize = true;
-            this.Lblregistroventa.Location = new System.Drawing.Point(86, 9);
+            this.Lblregistroventa.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblregistroventa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblregistroventa.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblregistroventa.Location = new System.Drawing.Point(51, 9);
             this.Lblregistroventa.Name = "Lblregistroventa";
-            this.Lblregistroventa.Size = new System.Drawing.Size(91, 13);
+            this.Lblregistroventa.Size = new System.Drawing.Size(173, 24);
             this.Lblregistroventa.TabIndex = 0;
             this.Lblregistroventa.Text = "Registro de venta";
             // 
             // Lbldatoscliente
             // 
             this.Lbldatoscliente.AutoSize = true;
-            this.Lbldatoscliente.Location = new System.Drawing.Point(19, 35);
+            this.Lbldatoscliente.BackColor = System.Drawing.SystemColors.Window;
+            this.Lbldatoscliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbldatoscliente.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lbldatoscliente.Location = new System.Drawing.Point(12, 71);
             this.Lbldatoscliente.Name = "Lbldatoscliente";
-            this.Lbldatoscliente.Size = new System.Drawing.Size(89, 13);
+            this.Lbldatoscliente.Size = new System.Drawing.Size(129, 16);
             this.Lbldatoscliente.TabIndex = 1;
             this.Lbldatoscliente.Text = "Datos del cliente:";
             // 
             // Lblnombre
             // 
             this.Lblnombre.AutoSize = true;
-            this.Lblnombre.Location = new System.Drawing.Point(19, 71);
+            this.Lblnombre.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblnombre.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblnombre.Location = new System.Drawing.Point(12, 110);
             this.Lblnombre.Name = "Lblnombre";
-            this.Lblnombre.Size = new System.Drawing.Size(47, 13);
+            this.Lblnombre.Size = new System.Drawing.Size(54, 13);
             this.Lblnombre.TabIndex = 2;
             this.Lblnombre.Text = "Nombre:";
             // 
             // Txtbnombre
             // 
-            this.Txtbnombre.Location = new System.Drawing.Point(89, 68);
+            this.Txtbnombre.Location = new System.Drawing.Point(82, 107);
             this.Txtbnombre.Name = "Txtbnombre";
             this.Txtbnombre.Size = new System.Drawing.Size(100, 20);
             this.Txtbnombre.TabIndex = 3;
@@ -97,15 +108,18 @@ namespace OnlyPans
             // Lblcédula
             // 
             this.Lblcédula.AutoSize = true;
-            this.Lblcédula.Location = new System.Drawing.Point(19, 106);
+            this.Lblcédula.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblcédula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblcédula.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblcédula.Location = new System.Drawing.Point(12, 145);
             this.Lblcédula.Name = "Lblcédula";
-            this.Lblcédula.Size = new System.Drawing.Size(43, 13);
+            this.Lblcédula.Size = new System.Drawing.Size(50, 13);
             this.Lblcédula.TabIndex = 4;
             this.Lblcédula.Text = "Cédula:";
             // 
             // Txtbcédula
             // 
-            this.Txtbcédula.Location = new System.Drawing.Point(89, 103);
+            this.Txtbcédula.Location = new System.Drawing.Point(82, 142);
             this.Txtbcédula.Name = "Txtbcédula";
             this.Txtbcédula.Size = new System.Drawing.Size(100, 20);
             this.Txtbcédula.TabIndex = 5;
@@ -113,16 +127,21 @@ namespace OnlyPans
             // Lbldatosventa
             // 
             this.Lbldatosventa.AutoSize = true;
-            this.Lbldatosventa.Location = new System.Drawing.Point(19, 151);
+            this.Lbldatosventa.BackColor = System.Drawing.SystemColors.Window;
+            this.Lbldatosventa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbldatosventa.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lbldatosventa.Location = new System.Drawing.Point(12, 190);
             this.Lbldatosventa.Name = "Lbldatosventa";
-            this.Lbldatosventa.Size = new System.Drawing.Size(94, 13);
+            this.Lbldatosventa.Size = new System.Drawing.Size(134, 16);
             this.Lbldatosventa.TabIndex = 6;
             this.Lbldatosventa.Text = "Datos de la venta:";
             // 
             // Lblaliñado
             // 
             this.Lblaliñado.AutoSize = true;
-            this.Lblaliñado.Location = new System.Drawing.Point(19, 208);
+            this.Lblaliñado.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblaliñado.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblaliñado.Location = new System.Drawing.Point(12, 247);
             this.Lblaliñado.Name = "Lblaliñado";
             this.Lblaliñado.Size = new System.Drawing.Size(42, 13);
             this.Lblaliñado.TabIndex = 7;
@@ -131,7 +150,9 @@ namespace OnlyPans
             // Lblnoaliñado
             // 
             this.Lblnoaliñado.AutoSize = true;
-            this.Lblnoaliñado.Location = new System.Drawing.Point(19, 232);
+            this.Lblnoaliñado.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblnoaliñado.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblnoaliñado.Location = new System.Drawing.Point(12, 271);
             this.Lblnoaliñado.Name = "Lblnoaliñado";
             this.Lblnoaliñado.Size = new System.Drawing.Size(58, 13);
             this.Lblnoaliñado.TabIndex = 8;
@@ -140,7 +161,9 @@ namespace OnlyPans
             // Lblespecial
             // 
             this.Lblespecial.AutoSize = true;
-            this.Lblespecial.Location = new System.Drawing.Point(19, 261);
+            this.Lblespecial.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblespecial.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblespecial.Location = new System.Drawing.Point(12, 300);
             this.Lblespecial.Name = "Lblespecial";
             this.Lblespecial.Size = new System.Drawing.Size(47, 13);
             this.Lblespecial.TabIndex = 9;
@@ -149,7 +172,9 @@ namespace OnlyPans
             // Lblporciónaliñado
             // 
             this.Lblporciónaliñado.AutoSize = true;
-            this.Lblporciónaliñado.Location = new System.Drawing.Point(120, 204);
+            this.Lblporciónaliñado.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblporciónaliñado.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblporciónaliñado.Location = new System.Drawing.Point(113, 243);
             this.Lblporciónaliñado.Name = "Lblporciónaliñado";
             this.Lblporciónaliñado.Size = new System.Drawing.Size(46, 13);
             this.Lblporciónaliñado.TabIndex = 10;
@@ -158,7 +183,9 @@ namespace OnlyPans
             // Lblporciónnoaliñado
             // 
             this.Lblporciónnoaliñado.AutoSize = true;
-            this.Lblporciónnoaliñado.Location = new System.Drawing.Point(120, 232);
+            this.Lblporciónnoaliñado.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblporciónnoaliñado.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblporciónnoaliñado.Location = new System.Drawing.Point(113, 271);
             this.Lblporciónnoaliñado.Name = "Lblporciónnoaliñado";
             this.Lblporciónnoaliñado.Size = new System.Drawing.Size(46, 13);
             this.Lblporciónnoaliñado.TabIndex = 11;
@@ -167,122 +194,136 @@ namespace OnlyPans
             // Lblporciónespecial
             // 
             this.Lblporciónespecial.AutoSize = true;
-            this.Lblporciónespecial.Location = new System.Drawing.Point(120, 261);
+            this.Lblporciónespecial.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblporciónespecial.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblporciónespecial.Location = new System.Drawing.Point(113, 300);
             this.Lblporciónespecial.Name = "Lblporciónespecial";
             this.Lblporciónespecial.Size = new System.Drawing.Size(46, 13);
             this.Lblporciónespecial.TabIndex = 12;
             this.Lblporciónespecial.Text = "Porción:";
             // 
-            // textBox1
+            // Txtporciónaliñado
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 201);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(51, 20);
-            this.textBox1.TabIndex = 13;
+            this.Txtporciónaliñado.Location = new System.Drawing.Point(165, 240);
+            this.Txtporciónaliñado.Name = "Txtporciónaliñado";
+            this.Txtporciónaliñado.Size = new System.Drawing.Size(51, 20);
+            this.Txtporciónaliñado.TabIndex = 13;
             // 
-            // textBox2
+            // Txtporciónoaliñado
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 229);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(51, 20);
-            this.textBox2.TabIndex = 14;
+            this.Txtporciónoaliñado.Location = new System.Drawing.Point(165, 268);
+            this.Txtporciónoaliñado.Name = "Txtporciónoaliñado";
+            this.Txtporciónoaliñado.Size = new System.Drawing.Size(51, 20);
+            this.Txtporciónoaliñado.TabIndex = 14;
             // 
-            // textBox3
+            // Txtporciónespecial
             // 
-            this.textBox3.Location = new System.Drawing.Point(172, 258);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(51, 20);
-            this.textBox3.TabIndex = 15;
+            this.Txtporciónespecial.Location = new System.Drawing.Point(165, 297);
+            this.Txtporciónespecial.Name = "Txtporciónespecial";
+            this.Txtporciónespecial.Size = new System.Drawing.Size(51, 20);
+            this.Txtporciónespecial.TabIndex = 15;
             // 
             // Lbltipopan
             // 
             this.Lbltipopan.AutoSize = true;
-            this.Lbltipopan.Location = new System.Drawing.Point(19, 180);
+            this.Lbltipopan.BackColor = System.Drawing.SystemColors.Window;
+            this.Lbltipopan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbltipopan.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lbltipopan.Location = new System.Drawing.Point(12, 219);
             this.Lbltipopan.Name = "Lbltipopan";
-            this.Lbltipopan.Size = new System.Drawing.Size(64, 13);
+            this.Lbltipopan.Size = new System.Drawing.Size(75, 13);
             this.Lbltipopan.TabIndex = 16;
             this.Lbltipopan.Text = "Tipo de pan";
             // 
             // Lblhora
             // 
             this.Lblhora.AutoSize = true;
-            this.Lblhora.Location = new System.Drawing.Point(19, 345);
+            this.Lblhora.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblhora.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblhora.Location = new System.Drawing.Point(12, 384);
             this.Lblhora.Name = "Lblhora";
-            this.Lblhora.Size = new System.Drawing.Size(89, 13);
+            this.Lblhora.Size = new System.Drawing.Size(106, 13);
             this.Lblhora.TabIndex = 17;
             this.Lblhora.Text = "Hora de la venta:";
             // 
             // Txtbhoraventa
             // 
-            this.Txtbhoraventa.Location = new System.Drawing.Point(114, 342);
+            this.Txtbhoraventa.Location = new System.Drawing.Point(124, 381);
             this.Txtbhoraventa.Name = "Txtbhoraventa";
             this.Txtbhoraventa.Size = new System.Drawing.Size(100, 20);
             this.Txtbhoraventa.TabIndex = 18;
             // 
             // Btnvender
             // 
-            this.Btnvender.Location = new System.Drawing.Point(22, 391);
+            this.Btnvender.BackColor = System.Drawing.SystemColors.Window;
+            this.Btnvender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btnvender.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Btnvender.Location = new System.Drawing.Point(15, 429);
             this.Btnvender.Name = "Btnvender";
-            this.Btnvender.Size = new System.Drawing.Size(75, 23);
+            this.Btnvender.Size = new System.Drawing.Size(103, 39);
             this.Btnvender.TabIndex = 19;
             this.Btnvender.Text = "Vender";
-            this.Btnvender.UseVisualStyleBackColor = true;
+            this.Btnvender.UseVisualStyleBackColor = false;
+            this.Btnvender.Click += new System.EventHandler(this.Btnvender_Click);
             // 
             // Txtbprecioventa
             // 
-            this.Txtbprecioventa.Location = new System.Drawing.Point(144, 309);
+            this.Txtbprecioventa.Location = new System.Drawing.Point(162, 348);
             this.Txtbprecioventa.Name = "Txtbprecioventa";
             this.Txtbprecioventa.Size = new System.Drawing.Size(100, 20);
             this.Txtbprecioventa.TabIndex = 20;
+            this.Txtbprecioventa.Visible = false;
             // 
             // Lblpreciototal
             // 
             this.Lblpreciototal.AutoSize = true;
-            this.Lblpreciototal.Location = new System.Drawing.Point(19, 312);
+            this.Lblpreciototal.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblpreciototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblpreciototal.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblpreciototal.Location = new System.Drawing.Point(12, 351);
             this.Lblpreciototal.Name = "Lblpreciototal";
-            this.Lblpreciototal.Size = new System.Drawing.Size(119, 13);
+            this.Lblpreciototal.Size = new System.Drawing.Size(144, 13);
             this.Lblpreciototal.TabIndex = 21;
             this.Lblpreciototal.Text = "Precio total de la venta:";
-            // 
-            // Lblpreciopan
-            // 
-            this.Lblpreciopan.AutoSize = true;
-            this.Lblpreciopan.Location = new System.Drawing.Point(232, 180);
-            this.Lblpreciopan.Name = "Lblpreciopan";
-            this.Lblpreciopan.Size = new System.Drawing.Size(75, 13);
-            this.Lblpreciopan.TabIndex = 22;
-            this.Lblpreciopan.Text = "Precio del pan";
+            this.Lblpreciototal.Visible = false;
             // 
             // Txtbpreciopanaliñeado
             // 
-            this.Txtbpreciopanaliñeado.Location = new System.Drawing.Point(235, 201);
+            this.Txtbpreciopanaliñeado.Location = new System.Drawing.Point(228, 240);
             this.Txtbpreciopanaliñeado.Name = "Txtbpreciopanaliñeado";
             this.Txtbpreciopanaliñeado.Size = new System.Drawing.Size(35, 20);
             this.Txtbpreciopanaliñeado.TabIndex = 23;
             this.Txtbpreciopanaliñeado.Text = "1000";
+            this.Txtbpreciopanaliñeado.Visible = false;
             // 
             // Txtbprecionoaliñado
             // 
-            this.Txtbprecionoaliñado.Location = new System.Drawing.Point(235, 232);
+            this.Txtbprecionoaliñado.Location = new System.Drawing.Point(228, 271);
             this.Txtbprecionoaliñado.Name = "Txtbprecionoaliñado";
             this.Txtbprecionoaliñado.Size = new System.Drawing.Size(35, 20);
             this.Txtbprecionoaliñado.TabIndex = 24;
             this.Txtbprecionoaliñado.Text = "500";
+            this.Txtbprecionoaliñado.Visible = false;
             // 
             // Txtbpreciopanespecial
             // 
-            this.Txtbpreciopanespecial.Location = new System.Drawing.Point(235, 258);
+            this.Txtbpreciopanespecial.Location = new System.Drawing.Point(228, 297);
             this.Txtbpreciopanespecial.Name = "Txtbpreciopanespecial";
             this.Txtbpreciopanespecial.Size = new System.Drawing.Size(35, 20);
             this.Txtbpreciopanespecial.TabIndex = 25;
             this.Txtbpreciopanespecial.Text = "2000";
+            this.Txtbpreciopanespecial.Visible = false;
             // 
             // Lblventashechas
             // 
             this.Lblventashechas.AutoSize = true;
-            this.Lblventashechas.Location = new System.Drawing.Point(470, 35);
+            this.Lblventashechas.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblventashechas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblventashechas.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblventashechas.Location = new System.Drawing.Point(470, 32);
             this.Lblventashechas.Name = "Lblventashechas";
-            this.Lblventashechas.Size = new System.Drawing.Size(83, 13);
+            this.Lblventashechas.Size = new System.Drawing.Size(117, 16);
             this.Lblventashechas.TabIndex = 26;
             this.Lblventashechas.Text = "Ventas Hechas:";
             // 
@@ -290,9 +331,41 @@ namespace OnlyPans
             // 
             this.Rtbventashechas.Location = new System.Drawing.Point(381, 68);
             this.Rtbventashechas.Name = "Rtbventashechas";
-            this.Rtbventashechas.Size = new System.Drawing.Size(269, 343);
+            this.Rtbventashechas.Size = new System.Drawing.Size(280, 458);
             this.Rtbventashechas.TabIndex = 27;
             this.Rtbventashechas.Text = "";
+            // 
+            // Txtguardado
+            // 
+            this.Txtguardado.Location = new System.Drawing.Point(688, 28);
+            this.Txtguardado.Name = "Txtguardado";
+            this.Txtguardado.Size = new System.Drawing.Size(100, 20);
+            this.Txtguardado.TabIndex = 28;
+            this.Txtguardado.Visible = false;
+            // 
+            // Btnsalir
+            // 
+            this.Btnsalir.BackColor = System.Drawing.SystemColors.Window;
+            this.Btnsalir.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Btnsalir.Location = new System.Drawing.Point(688, 488);
+            this.Btnsalir.Name = "Btnsalir";
+            this.Btnsalir.Size = new System.Drawing.Size(86, 38);
+            this.Btnsalir.TabIndex = 29;
+            this.Btnsalir.Text = "Salir";
+            this.Btnsalir.UseVisualStyleBackColor = false;
+            this.Btnsalir.Click += new System.EventHandler(this.Btnsalir_Click);
+            // 
+            // Btncerrarusuario
+            // 
+            this.Btncerrarusuario.BackColor = System.Drawing.SystemColors.Window;
+            this.Btncerrarusuario.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Btncerrarusuario.Location = new System.Drawing.Point(688, 426);
+            this.Btncerrarusuario.Name = "Btncerrarusuario";
+            this.Btncerrarusuario.Size = new System.Drawing.Size(86, 42);
+            this.Btncerrarusuario.TabIndex = 30;
+            this.Btncerrarusuario.Text = "Cerrar Usuario";
+            this.Btncerrarusuario.UseVisualStyleBackColor = false;
+            this.Btncerrarusuario.Click += new System.EventHandler(this.Btncerrarusuario_Click);
             // 
             // InfoEmpleados
             // 
@@ -300,21 +373,23 @@ namespace OnlyPans
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 584);
+            this.Controls.Add(this.Btncerrarusuario);
+            this.Controls.Add(this.Btnsalir);
+            this.Controls.Add(this.Txtguardado);
             this.Controls.Add(this.Rtbventashechas);
             this.Controls.Add(this.Lblventashechas);
             this.Controls.Add(this.Txtbpreciopanespecial);
             this.Controls.Add(this.Txtbprecionoaliñado);
             this.Controls.Add(this.Txtbpreciopanaliñeado);
-            this.Controls.Add(this.Lblpreciopan);
             this.Controls.Add(this.Lblpreciototal);
             this.Controls.Add(this.Txtbprecioventa);
             this.Controls.Add(this.Btnvender);
             this.Controls.Add(this.Txtbhoraventa);
             this.Controls.Add(this.Lblhora);
             this.Controls.Add(this.Lbltipopan);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Txtporciónespecial);
+            this.Controls.Add(this.Txtporciónoaliñado);
+            this.Controls.Add(this.Txtporciónaliñado);
             this.Controls.Add(this.Lblporciónespecial);
             this.Controls.Add(this.Lblporciónnoaliñado);
             this.Controls.Add(this.Lblporciónaliñado);
@@ -350,20 +425,22 @@ namespace OnlyPans
         private System.Windows.Forms.Label Lblporciónaliñado;
         private System.Windows.Forms.Label Lblporciónnoaliñado;
         private System.Windows.Forms.Label Lblporciónespecial;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Txtporciónaliñado;
+        private System.Windows.Forms.TextBox Txtporciónoaliñado;
+        private System.Windows.Forms.TextBox Txtporciónespecial;
         private System.Windows.Forms.Label Lbltipopan;
         private System.Windows.Forms.Label Lblhora;
         private System.Windows.Forms.TextBox Txtbhoraventa;
         private System.Windows.Forms.Button Btnvender;
         private System.Windows.Forms.TextBox Txtbprecioventa;
         private System.Windows.Forms.Label Lblpreciototal;
-        private System.Windows.Forms.Label Lblpreciopan;
         private System.Windows.Forms.TextBox Txtbpreciopanaliñeado;
         private System.Windows.Forms.TextBox Txtbprecionoaliñado;
         private System.Windows.Forms.TextBox Txtbpreciopanespecial;
         private System.Windows.Forms.Label Lblventashechas;
         private System.Windows.Forms.RichTextBox Rtbventashechas;
+        private System.Windows.Forms.TextBox Txtguardado;
+        private System.Windows.Forms.Button Btnsalir;
+        private System.Windows.Forms.Button Btncerrarusuario;
     }
 }

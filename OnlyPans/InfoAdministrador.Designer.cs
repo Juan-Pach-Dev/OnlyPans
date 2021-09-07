@@ -37,27 +37,33 @@ namespace OnlyPans
             // 
             // Rtbalmacenamientodeventas
             // 
-            this.Rtbalmacenamientodeventas.Location = new System.Drawing.Point(111, 72);
+            this.Rtbalmacenamientodeventas.Location = new System.Drawing.Point(80, 56);
             this.Rtbalmacenamientodeventas.Name = "Rtbalmacenamientodeventas";
-            this.Rtbalmacenamientodeventas.Size = new System.Drawing.Size(261, 339);
+            this.Rtbalmacenamientodeventas.Size = new System.Drawing.Size(315, 382);
             this.Rtbalmacenamientodeventas.TabIndex = 0;
             this.Rtbalmacenamientodeventas.Text = "";
             // 
             // Btnproducirregistroventa
             // 
-            this.Btnproducirregistroventa.Location = new System.Drawing.Point(482, 174);
+            this.Btnproducirregistroventa.BackColor = System.Drawing.SystemColors.Window;
+            this.Btnproducirregistroventa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btnproducirregistroventa.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Btnproducirregistroventa.Location = new System.Drawing.Point(478, 196);
             this.Btnproducirregistroventa.Name = "Btnproducirregistroventa";
             this.Btnproducirregistroventa.Size = new System.Drawing.Size(104, 72);
             this.Btnproducirregistroventa.TabIndex = 1;
             this.Btnproducirregistroventa.Text = "Producir Registro de Venta";
-            this.Btnproducirregistroventa.UseVisualStyleBackColor = true;
+            this.Btnproducirregistroventa.UseVisualStyleBackColor = false;
             // 
             // Lblalmacenamientoventas
             // 
             this.Lblalmacenamientoventas.AutoSize = true;
-            this.Lblalmacenamientoventas.Location = new System.Drawing.Point(151, 43);
+            this.Lblalmacenamientoventas.BackColor = System.Drawing.SystemColors.Window;
+            this.Lblalmacenamientoventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblalmacenamientoventas.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Lblalmacenamientoventas.Location = new System.Drawing.Point(82, 24);
             this.Lblalmacenamientoventas.Name = "Lblalmacenamientoventas";
-            this.Lblalmacenamientoventas.Size = new System.Drawing.Size(185, 13);
+            this.Lblalmacenamientoventas.Size = new System.Drawing.Size(313, 20);
             this.Lblalmacenamientoventas.TabIndex = 2;
             this.Lblalmacenamientoventas.Text = "Almacenamiento de las ventas totales";
             // 
