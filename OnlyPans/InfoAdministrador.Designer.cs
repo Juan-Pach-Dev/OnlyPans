@@ -72,7 +72,7 @@ namespace OnlyPans
             this.Controls.Add(this.Rtbalmacenamientodeventas);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "InfoAdministrador";
-            this.Text = "Form1";
+            this.Text = "InfoAdministrador";
             this.ResumeLayout(false);
             this.PerformLayout();
 
